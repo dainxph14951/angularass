@@ -15,6 +15,7 @@ import { EditWorkComponent } from './components/work/edit-work/edit-work.compone
 import { ListWorkComponent } from './components/work/list-work/list-work.component';
 import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { DetailWorkComponent } from './pages/detail-work/detail-work.component';
 import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { WorkComponent } from './pages/work/work.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
    { path:"", component: HomeComponent, pathMatch: "full"},
    { path:"blog", component: BlogComponent},
    { path:"work", component: WorkComponent},
+   { path:"detailwork", component: DetailWorkComponent},
    { path:"signup", component: SignupComponent},
    { path:"signin", component: SigninComponent},
 

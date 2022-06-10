@@ -25,6 +25,7 @@ import { AddWorkComponent } from './components/work/add-work/add-work.component'
 import { EditCategoryComponent } from './components/category/edit-category/edit-category.component';
 import { EditBlogComponent } from './components/blog/edit-blog/edit-blog.component';
 import { EditWorkComponent } from './components/work/edit-work/edit-work.component';
+import { DetailWorkComponent } from './pages/detail-work/detail-work.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { EditWorkComponent } from './components/work/edit-work/edit-work.compone
     AddWorkComponent,
     EditCategoryComponent,
     EditBlogComponent,
-    EditWorkComponent
+    EditWorkComponent,
+    DetailWorkComponent
   ],
   imports: [
     BrowserModule,

@@ -72,6 +72,12 @@
       "password": "$2a$10$h2ZGEp7tJouVX6deEkcs/ObEAEt/6Ar578KFJK59bepjYw9i0s9Pe",
       "name": "aaa",
       "id": 2
+    },
+    {
+      "email": "anh@gmail.com",
+      "password": "$2a$10$ue68RXkHgVW6pVBHIFJ.gutJS46svBKcly3hYBm0VvRixdjJNKA6W",
+      "name": "aaa",
+      "id": 3
     }
   ]
 }

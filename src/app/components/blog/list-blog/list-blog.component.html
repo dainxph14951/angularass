@@ -1,31 +1,56 @@
-<h2>List blog</h2>
-<button class="btn btn-primary m-2">
-  <a href="" class="text-white ">Add</a>
-</button>
-<table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Category</th>
-        <th scope="col">Desc</th>
-        <th scope="col">Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let blogs of blogs; let i = index">
-        <th scope="row">{{i + 1}}</th>
-        <td>{{blogs.name}}</td>
-        <td>{{blogs.categoryId}}</td>
-        <td>{{blogs.desc}}</td>
-        <td class="d-flex" >
-          <button class="btn btn-warning m-2">
-              <a href="" class="text-white ">Edit</a>
-          </button> 
-          <button class="btn btn-danger">
-              <a (click)="onHanderRemove(blogs.id)" class="text-white ">Delete</a>
-          </button>
-      </td>
-      </tr>
-    </tbody>
-  </table>
+  <h1 class="text-center">List Blog</h1>
+  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    <a routerLink="add">Add Category</a>
+  </button>
+  <div class="flex flex-col max-w-6xl mx-auto px-5 text-center">
+    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+        <div class="overflow-hidden">
+          <table class="min-w-full">
+            <thead class="border-b">
+              <tr>
+                <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                  #
+                </th>
+                <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                  name
+                </th>
+                <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                  Category
+                </th>
+                <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                  Desc
+                </th>
+                <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                  Action
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b" *ngFor="let blogs of blogs; let i = index">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{i +1 }}</td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  {{blogs.name}}
+                </td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  {{blogs.categoryId}}
+                </td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  {{blogs.desc}}
+                </td>
+                <td>
+                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <a routerLink="{{blogs.id}}/edit">Edit</a>
+                  </button>
+                  <button class="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <a (click)="onHanderRemove(blogs.id)">Remove</a>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+

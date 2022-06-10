@@ -34,7 +34,7 @@ export class EditWorkComponent implements OnInit {
     if(id){
       this.workService.updateWork(this.works).subscribe(data => console.log(data))
       alert('update thành công !!')
-      this.router.navigateByUrl('admin/category')
+      this.router.navigateByUrl('admin/work')
     }
 
   }

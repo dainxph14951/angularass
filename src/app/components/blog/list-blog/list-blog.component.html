@@ -1,1 +1,31 @@
-<p>list-blog works!</p>
+<h2>List blog</h2>
+<button class="btn btn-primary m-2">
+  <a href="" class="text-white ">Add</a>
+</button>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Category</th>
+        <th scope="col">Desc</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let blogs of blogs; let i = index">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{blogs.name}}</td>
+        <td>{{blogs.categoryId}}</td>
+        <td>{{blogs.desc}}</td>
+        <td class="d-flex" >
+          <button class="btn btn-warning m-2">
+              <a href="" class="text-white ">Edit</a>
+          </button> 
+          <button class="btn btn-danger">
+              <a (click)="onHanderRemove(blogs.id)" class="text-white ">Delete</a>
+          </button>
+      </td>
+      </tr>
+    </tbody>
+  </table>

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddUserComponent } from './components/auth/add-user/add-user.component';
 import { ListUserComponent } from './components/auth/list-user/list-user.component';
 import { AddBlogComponent } from './components/blog/add-blog/add-blog.component';
+import { EditBlogComponent } from './components/blog/edit-blog/edit-blog.component';
 import { ListBlogComponent } from './components/blog/list-blog/list-blog.component';
 import { AddCategoryComponent } from './components/category/add-category/add-category.component';
 import { EditCategoryComponent } from './components/category/edit-category/edit-category.component';
@@ -10,6 +11,7 @@ import { ListCategoryComponent } from './components/category/list-category/list-
 import { AddProfileComponent } from './components/profile/add-profile/add-profile.component';
 import { ListProfileComponent } from './components/profile/list-profile/list-profile.component';
 import { AddWorkComponent } from './components/work/add-work/add-work.component';
+import { EditWorkComponent } from './components/work/edit-work/edit-work.component';
 import { ListWorkComponent } from './components/work/list-work/list-work.component';
 import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './pages/blog/blog.component';
@@ -26,11 +28,11 @@ const routes: Routes = [
 
    { path:"admin/blog", component: ListBlogComponent},
    { path:"admin/blog/add", component: AddBlogComponent},
-   { path:"admin/blog/:id/edit", component: AddBlogComponent},
+   { path:"admin/blog/:id/edit", component: EditBlogComponent},
 
    { path:"admin/work", component: ListWorkComponent},
    { path:"admin/work/add", component: AddWorkComponent},
-   { path:"admin/work/:id/edit", component: EditCategoryComponent},
+   { path:"admin/work/:id/edit", component: EditWorkComponent},
 
    { path:"admin/category", component: ListCategoryComponent},
    { path:"admin/category/add", component: AddCategoryComponent},

@@ -1,7 +1,6 @@
 export interface Iblog {
     id?: number,
     name: string,
-    time : Date,
-    category: string,
+    categoryId: number,
     desc: string
 }

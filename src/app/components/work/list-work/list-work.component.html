@@ -1,1 +1,33 @@
-<p>list-work works!</p>
+<h2>List blog</h2>
+<button class="btn btn-primary m-2">
+  <a href="" class="text-white ">Add</a>
+</button>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">img</th>
+        <th scope="col">Category</th>
+        <th scope="col">Desc</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let works of works; let i = index">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{works.name}}</td>
+        <td>{{works.img}}</td>
+        <td>{{works.category}}</td>
+        <td>{{works.desc}}</td>
+        <td class="d-flex" >
+          <button class="btn btn-warning m-2">
+              <a href="" class="text-white ">Edit</a>
+          </button> 
+          <button class="btn btn-danger">
+              <a (click)="onHanderRemove(works.id)" class="text-white ">Delete</a>
+          </button>
+      </td>
+      </tr>
+    </tbody>
+  </table>

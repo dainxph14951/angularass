@@ -3,19 +3,19 @@
     {
       "id": 1,
       "name": "Making a design system from scratch",
-      "category": "Express, Handlebars",
+      "categoryId": 1,
       "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
     },
     {
       "id": 2,
       "name": "Creating pixel perfect icons in Figma",
-      "category": "Express, Handlebars",
+      "categoryId": 2,
       "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
     },
     {
       "id": 3,
       "name": "UI Interactions of the week",
-      "category": "Express, Handlebars",
+      "categoryId": 3,
       "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
     }
   ],

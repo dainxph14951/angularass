@@ -1,1 +1,27 @@
-<p>list-category works!</p>
+<h1>List CAtegory</h1>
+<button class="btn btn-primary m-2">
+    <a href="" class="text-white ">Add</a>
+</button>
+<table class="table ">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let categorys of categorys; let i = index">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{categorys.name}}</td>
+        <td>
+            <button class="btn btn-warning m-2">
+                <a href="admin/category/{{categorys.id}}/edit" class="text-white ">Edit</a>
+            </button> 
+            <button class="btn btn-danger">
+                <a (click)="onHanderRemove(categorys.id)" class="text-white ">Delete</a>
+            </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

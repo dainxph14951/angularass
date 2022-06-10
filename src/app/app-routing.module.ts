@@ -5,6 +5,7 @@ import { ListUserComponent } from './components/auth/list-user/list-user.compone
 import { AddBlogComponent } from './components/blog/add-blog/add-blog.component';
 import { ListBlogComponent } from './components/blog/list-blog/list-blog.component';
 import { AddCategoryComponent } from './components/category/add-category/add-category.component';
+import { EditCategoryComponent } from './components/category/edit-category/edit-category.component';
 import { ListCategoryComponent } from './components/category/list-category/list-category.component';
 import { AddProfileComponent } from './components/profile/add-profile/add-profile.component';
 import { ListProfileComponent } from './components/profile/list-profile/list-profile.component';
@@ -29,11 +30,11 @@ const routes: Routes = [
 
    { path:"admin/work", component: ListWorkComponent},
    { path:"admin/work/add", component: AddWorkComponent},
-   { path:"admin/work/:id/edit", component: AddWorkComponent},
+   { path:"admin/work/:id/edit", component: EditCategoryComponent},
 
    { path:"admin/category", component: ListCategoryComponent},
    { path:"admin/category/add", component: AddCategoryComponent},
-   { path:"admin/category/:id/edit", component: AddCategoryComponent},
+   { path:"admin/category/:id/edit", component: EditCategoryComponent},
 
    { path:"admin/auth", component: ListUserComponent},
    { path:"admin/auth/add", component: AddUserComponent},

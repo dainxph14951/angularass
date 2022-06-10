@@ -18,7 +18,6 @@ export class CategoryService {
   detailCate(id: any): Observable<Icategory>{
     return this.http.get<Icategory>(`${this.URL_API}/${id}`)
   }
-
   deleteCate(id: any): Observable<Icategory>{
     return this.http.delete<Icategory>(`${this.URL_API}/${id}`)
   }

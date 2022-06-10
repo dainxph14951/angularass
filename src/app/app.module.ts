@@ -22,6 +22,7 @@ import { ListProfileComponent } from './components/profile/list-profile/list-pro
 import { AddProfileComponent } from './components/profile/add-profile/add-profile.component';
 import { ListWorkComponent } from './components/work/list-work/list-work.component';
 import { AddWorkComponent } from './components/work/add-work/add-work.component';
+import { EditCategoryComponent } from './components/category/edit-category/edit-category.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { AddWorkComponent } from './components/work/add-work/add-work.component'
     ListProfileComponent,
     AddProfileComponent,
     ListWorkComponent,
-    AddWorkComponent
+    AddWorkComponent,
+    EditCategoryComponent
   ],
   imports: [
     BrowserModule,

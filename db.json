@@ -1,22 +1,64 @@
 {
-    "blogs": [
-        {"id": 1,"name": "Making a design system from scratch","category": "Express, Handlebars","desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."},
-        {"id": 2,"name": "Creating pixel perfect icons in Figma","category": "Express, Handlebars","desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."},
-        {"id": 3,"name": "UI Interactions of the week","category": "Express, Handlebars","desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}
-    ],
-    "works": [
-        {"id": 1,"name": "Designing Dashboards","img": "abc.jbg","category": "Dashboard","desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."},
-        {"id": 1,"name": "Vibrant Portraits of 2020","img": "abc.jbg","category": "Illustration","desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."},
-        {"id": 1,"name": "36 Days of Malayalam type","img": "abc.jbg","category": "Typography","desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}
-
-    ],
-    "categorys": [
-        {"id": 1, "name": "Design"},
-        {"id": 2, "name": "Pattern"},
-        {"id": 3, "name": "Figma"},
-        {"id": 4, "name": "Icon Design"}
-    ],
-    "users": [
-
-    ]
+  "blogs": [
+    {
+      "id": 1,
+      "name": "Making a design system from scratch",
+      "category": "Express, Handlebars",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    },
+    {
+      "id": 2,
+      "name": "Creating pixel perfect icons in Figma",
+      "category": "Express, Handlebars",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    },
+    {
+      "id": 3,
+      "name": "UI Interactions of the week",
+      "category": "Express, Handlebars",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    }
+  ],
+  "works": [
+    {
+      "id": 1,
+      "name": "Designing Dashboards",
+      "img": "abc.jbg",
+      "category": "Dashboard",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    },
+    {
+      "id": 1,
+      "name": "Vibrant Portraits of 2020",
+      "img": "abc.jbg",
+      "category": "Illustration",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    },
+    {
+      "id": 1,
+      "name": "36 Days of Malayalam type",
+      "img": "abc.jbg",
+      "category": "Typography",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    }
+  ],
+  "categorys": [
+    {
+      "id": 1,
+      "name": "Design update"
+    },
+    {
+      "id": 2,
+      "name": "Pattern"
+    },
+    {
+      "id": 3,
+      "name": "Figma"
+    },
+    {
+      "id": 4,
+      "name": "Icon Design"
+    }
+  ],
+  "users": []
 }

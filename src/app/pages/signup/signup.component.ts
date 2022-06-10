@@ -14,14 +14,14 @@ export class SignupComponent implements OnInit {
     password: 0
    }
   constructor(
-    private usersService : AuthService,
+    private authService : AuthService,
     private router: Router
   ) { }
 
   ngOnInit(): void {
   }
   onSubmit(){
-    this.usersService.addUser(this.user).subscribe(data => {
+    this.authService.addUser(this.user).subscribe(data => {
       alert(' thêm thành công')
       this.router.navigateByUrl('signin');
     })

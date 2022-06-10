@@ -60,5 +60,18 @@
       "name": "Icon Design"
     }
   ],
-  "users": []
+  "users": [
+    {
+      "email": "dainxph14951@fpt.edu.vn",
+      "password": "$2a$10$k6SJyITwnxLJRWlKMew3W.vzPFQgbEYFGBFOdsHQQmr5XYtG0yZ..",
+      "name": "đại",
+      "id": 1
+    },
+    {
+      "email": "xuandai300092@gmail.com",
+      "password": "$2a$10$h2ZGEp7tJouVX6deEkcs/ObEAEt/6Ar578KFJK59bepjYw9i0s9Pe",
+      "name": "aaa",
+      "id": 2
+    }
+  ]
 }

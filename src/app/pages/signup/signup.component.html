@@ -1,25 +1,33 @@
-<form nz-form (ngSubmit)="onSubmit()" #formAdd="ngForm" class="login-form" >
-
-    <input
-        type="text"
-        placeholder="name"
-        [(ngModel)]="user.name"
-        name="name"
-      />
-          <input
-        type="text"
-        placeholder="email"
-        [(ngModel)]="user.email"
-        name="email"
-      />
-      <input
-      type="password"
-      [(ngModel)]="user.password"
-      placeholder="password"
-      name="password"
-    />
-      
-  
-      <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Log in</button>
-    </form>
-  
+<div class="container">
+    <form (ngSubmit)="onSubmit()" #formAdd="ngForm" class="login-form">
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Name</label>
+            <input type="text" 
+            placeholder="name"
+            [(ngModel)]="user.name"
+            name="name" 
+             class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Email</label>
+            <input type="text"
+            placeholder="email"
+            [(ngModel)]="user.email"
+            name="email" 
+            class="form-control" id="exampleInputPassword1">
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password"
+          [(ngModel)]="user.password"
+            placeholder="password"
+            name="password"
+          class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>

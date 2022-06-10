@@ -1,22 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { Iwork } from 'src/app/model/work';
 import { WorkService } from 'src/app/server/work.service';
-
 @Component({
-  selector: 'app-list-blog',
-  templateUrl: './list-blog.component.html',
-  styleUrls: ['./list-blog.component.css']
+  selector: 'app-list-work',
+  templateUrl: './list-work.component.html',
+  styleUrls: ['./list-work.component.css']
 })
-export class ListBlogComponent implements OnInit {
-    works! : Iwork[]
+export class ListWorkComponent implements OnInit {
+  works! : Iwork[]
   constructor(
     private workService: WorkService
   ) { }
 
+
   ngOnInit(): void {
-    this.getBlog();
+    this.getWork();
   }
-  getBlog(){
+  getWork(){
       this.workService.listWork().subscribe(data => {
         this.works = data;
       })

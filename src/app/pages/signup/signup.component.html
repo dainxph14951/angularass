@@ -1,1 +1,25 @@
-<p>signup works!</p>
+<form nz-form (ngSubmit)="onSubmit()" #formAdd="ngForm" class="login-form" >
+
+    <input
+        type="text"
+        placeholder="name"
+        [(ngModel)]="user.name"
+        name="name"
+      />
+          <input
+        type="text"
+        placeholder="email"
+        [(ngModel)]="user.email"
+        name="email"
+      />
+      <input
+      type="password"
+      [(ngModel)]="user.password"
+      placeholder="password"
+      name="password"
+    />
+      
+  
+      <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Log in</button>
+    </form>
+  

@@ -2,44 +2,44 @@
   "blogs": [
     {
       "id": 1,
-      "name": "Making a design system from scratch",
+      "name": "The standard Lorem Ipsum passage",
       "categoryId": 1,
-      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
     {
       "id": 2,
-      "name": "Creating pixel perfect icons in Figma",
+      "name": "Bonorum et Malorum",
       "categoryId": 2,
-      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+      "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
     },
     {
       "id": 3,
-      "name": "UI Interactions of the week",
+      "name": "1914 translation by H. Rackham",
       "categoryId": 3,
-      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+      "desc": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness."
     }
   ],
   "works": [
     {
       "id": 1,
       "name": "Designing Dashboards",
-      "img": "abc.jbg",
+      "img": "https://squirrel365.io/wp-content/uploads/2020/05/A-well-designed-dashboard.png",
       "category": "Dashboard",
       "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Vibrant Portraits of 2020",
-      "img": "abc.jbg",
+      "img": "https://i.pinimg.com/originals/5f/d2/38/5fd238962981a440a6e96f75664bfa49.png",
       "category": "Illustration",
-      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+      "desc": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
     },
     {
-      "id": 1,
+      "id": 3,
       "name": "36 Days of Malayalam type",
-      "img": "abc.jbg",
+      "img": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2389be73152211.5bffde9511c55.jpg",
       "category": "Typography",
-      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+      "desc": "ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words."
     }
   ],
   "categorys": [

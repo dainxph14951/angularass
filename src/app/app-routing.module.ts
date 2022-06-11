@@ -24,7 +24,7 @@ const routes: Routes = [
    { path:"", component: HomeComponent, pathMatch: "full"},
    { path:"blog", component: BlogComponent},
    { path:"work", component: WorkComponent},
-   { path:"detailwork", component: DetailWorkComponent},
+   { path:"work/detailwork/:id", component: DetailWorkComponent},
    { path:"signup", component: SignupComponent},
    { path:"signin", component: SigninComponent},
 

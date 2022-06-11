@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './auth.guard';
 import { AddUserComponent } from './components/auth/add-user/add-user.component';
 import { ListUserComponent } from './components/auth/list-user/list-user.component';
 import { AddBlogComponent } from './components/blog/add-blog/add-blog.component';
@@ -26,7 +27,7 @@ const routes: Routes = [
    { path:"work", component: WorkComponent},
    { path:"work/detailwork/:id", component: DetailWorkComponent},
    { path:"signup", component: SignupComponent},
-   { path:"signin", component: SigninComponent},
+   { path:"signin", component: SigninComponent, canActivate: [AuthGuard]},
 
    { path:"admin/blog", component: ListBlogComponent},
    { path:"admin/blog/add", component: AddBlogComponent},

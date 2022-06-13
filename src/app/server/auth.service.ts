@@ -22,6 +22,9 @@ export class AuthService {
     deleteUser(id: any): Observable<Iauth>{
       return this.http.delete<Iauth>(`${this.URL_API}/${id}`)
     }
+    detail(id: any): Observable<Iauth>{
+      return this.http.get<Iauth>(`${this.URL_API}/${id}`)
+    }
 
 
     signin(user : Iauth): Observable<Iauth> {

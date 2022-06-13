@@ -26,6 +26,7 @@ import { EditCategoryComponent } from './components/category/edit-category/edit-
 import { EditBlogComponent } from './components/blog/edit-blog/edit-blog.component';
 import { EditWorkComponent } from './components/work/edit-work/edit-work.component';
 import { DetailWorkComponent } from './pages/detail-work/detail-work.component';
+import { EditUserComponent } from './components/auth/edit-user/edit-user.component';
 
 @NgModule({
   declarations: [
@@ -50,14 +51,15 @@ import { DetailWorkComponent } from './pages/detail-work/detail-work.component';
     EditCategoryComponent,
     EditBlogComponent,
     EditWorkComponent,
-    DetailWorkComponent
+    DetailWorkComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

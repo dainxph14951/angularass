@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth.guard';
 import { AddUserComponent } from './components/auth/add-user/add-user.component';
+import { EditUserComponent } from './components/auth/edit-user/edit-user.component';
 import { ListUserComponent } from './components/auth/list-user/list-user.component';
 import { AddBlogComponent } from './components/blog/add-blog/add-blog.component';
 import { EditBlogComponent } from './components/blog/edit-blog/edit-blog.component';
@@ -26,9 +27,9 @@ const routes: Routes = [
    { path:"blog", component: BlogComponent},
    { path:"work", component: WorkComponent},
    { path:"work/detailwork/:id", component: DetailWorkComponent},
-   { path:"signup", component: SignupComponent},
-   { path:"signin", component: SigninComponent, canActivate: [AuthGuard]},
-
+   { path:"signup", component: SignupComponent, },
+   { path:"signin", component: SigninComponent},
+  //  canActivate: [AuthGuard]
    { path:"admin/blog", component: ListBlogComponent},
    { path:"admin/blog/add", component: AddBlogComponent},
    { path:"admin/blog/:id/edit", component: EditBlogComponent},
@@ -41,9 +42,9 @@ const routes: Routes = [
    { path:"admin/category/add", component: AddCategoryComponent},
    { path:"admin/category/:id/edit", component: EditCategoryComponent},
 
-   { path:"admin/auth", component: ListUserComponent},
-   { path:"admin/auth/add", component: AddUserComponent},
-   { path:"admin/auth/:id/edit", component: AddUserComponent},
+   { path:"admin/user", component: ListUserComponent},
+   { path:"admin/user/add", component: AddUserComponent},
+   { path:"admin/user/:id/edit", component: EditUserComponent},
 
    { path:"admin/profile", component: ListProfileComponent},
    { path:"admin/profile/add", component: AddProfileComponent},

@@ -63,21 +63,15 @@
   "users": [
     {
       "email": "dainxph14951@fpt.edu.vn",
-      "password": "$2a$10$k6SJyITwnxLJRWlKMew3W.vzPFQgbEYFGBFOdsHQQmr5XYtG0yZ..",
-      "name": "đại",
+      "password": "$2a$10$5IbWv7IJW1K9TWaOzAjYm.IsCxsVrdMq40weX3JkrKqlL2yTnlEQS",
+      "name": "Đại Nguyễn",
       "id": 1
     },
     {
       "email": "xuandai300092@gmail.com",
-      "password": "$2a$10$h2ZGEp7tJouVX6deEkcs/ObEAEt/6Ar578KFJK59bepjYw9i0s9Pe",
-      "name": "aaa",
+      "password": "$2a$10$967mI9AK7c2Jy50zo8sRNeJQXZxRnqvmTGVdV.Gj4EHBFLbr4PqT6",
+      "name": "Long",
       "id": 2
-    },
-    {
-      "email": "anh@gmail.com",
-      "password": "$2a$10$ue68RXkHgVW6pVBHIFJ.gutJS46svBKcly3hYBm0VvRixdjJNKA6W",
-      "name": "aaa",
-      "id": 3
     }
   ]
 }

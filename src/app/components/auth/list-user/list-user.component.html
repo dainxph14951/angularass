@@ -1,1 +1,49 @@
-<p>list-user works!</p>
+<h1 class="text-center">List User</h1>
+  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    <a routerLink="add">Add User</a>
+  </button>
+  <div class="flex flex-col max-w-6xl mx-auto px-5 ">
+    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+        <div class="overflow-hidden">
+          <table class="min-w-full">
+            <thead class="border-b">
+              <tr>
+                <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                  #
+                </th>
+                <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                  name
+                </th>
+                <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                    email
+                </th>
+                <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                  Action
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b" *ngFor="let user of user; let i = index">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{i +1 }}</td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                  {{user.name}}
+                </td>
+                <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                    {{user.email}}
+                  </td>
+                <td>
+                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <a routerLink="{{user.id}}/edit">Edit</a>
+                  </button>
+                  <button class="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <a (click)="onHanderRemove(user.id)">Remove</a>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>

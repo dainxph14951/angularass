@@ -25,7 +25,14 @@ export class SigninComponent implements OnInit {
     this.authService.signin(this.user).subscribe(data => {
       localStorage.setItem("user", JSON.stringify(this.user));
       alert(' ĐĂng nhập thành công')
-      this.router.navigateByUrl('/');
+      localStorage.setItem("user", JSON.stringify(data))
+      setTimeout(()=>{
+        if (JSON.parse(localStorage.getItem("user")!).user. email== "xuandai300092@gmail.com") {
+          this.router.navigateByUrl(`admin/dashboard`)
+        }else{
+          this.router.navigateByUrl(`/`)
+        }
+      },2000)
     })
 }
 

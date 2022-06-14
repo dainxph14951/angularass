@@ -16,15 +16,11 @@ export class AuthGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-      const id = JSON.parse(localStorage.getItem("user") as any).user.id
-      console.log(id)
-      if(id == "1"){
-        return true;  
-      }else{
-        return false;
+      const user = JSON.parse(localStorage.getItem('user')!);
+      if (user?.user.email == "xuandai300092@gmail.com") {
+        return true
       }
- 
-
-  }
+      return false
+    }
   
 }

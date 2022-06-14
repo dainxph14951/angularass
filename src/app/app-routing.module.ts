@@ -10,6 +10,7 @@ import { ListBlogComponent } from './components/blog/list-blog/list-blog.compone
 import { AddCategoryComponent } from './components/category/add-category/add-category.component';
 import { EditCategoryComponent } from './components/category/edit-category/edit-category.component';
 import { ListCategoryComponent } from './components/category/list-category/list-category.component';
+import { HeaderAdminComponent } from './components/header-admin/header-admin.component';
 import { AddProfileComponent } from './components/profile/add-profile/add-profile.component';
 import { ListProfileComponent } from './components/profile/list-profile/list-profile.component';
 import { AddWorkComponent } from './components/work/add-work/add-work.component';
@@ -24,31 +25,33 @@ import { WorkComponent } from './pages/work/work.component';
 
 const routes: Routes = [
    { path:"", component: HomeComponent, pathMatch: "full"},
-   { path:"blog", component: BlogComponent},
+   { path:"blog", component: BlogComponent,canActivate: [AuthGuard]},
    { path:"work", component: WorkComponent},
    { path:"work/detailwork/:id", component: DetailWorkComponent},
    { path:"signup", component: SignupComponent, },
    { path:"signin", component: SigninComponent},
   //  canActivate: [AuthGuard]
-   { path:"admin/blog", component: ListBlogComponent},
-   { path:"admin/blog/add", component: AddBlogComponent},
-   { path:"admin/blog/:id/edit", component: EditBlogComponent},
 
-   { path:"admin/work", component: ListWorkComponent},
-   { path:"admin/work/add", component: AddWorkComponent},
-   { path:"admin/work/:id/edit", component: EditWorkComponent},
+  { path:"admin/dashboard", component: HeaderAdminComponent,canActivate: [AuthGuard]},
+   { path:"admin/blog", component: ListBlogComponent,canActivate: [AuthGuard]},
+   { path:"admin/blog/add", component: AddBlogComponent,canActivate: [AuthGuard]},
+   { path:"admin/blog/:id/edit", component: EditBlogComponent,canActivate: [AuthGuard]},
 
-   { path:"admin/category", component: ListCategoryComponent},
-   { path:"admin/category/add", component: AddCategoryComponent},
-   { path:"admin/category/:id/edit", component: EditCategoryComponent},
+   { path:"admin/work", component: ListWorkComponent,canActivate: [AuthGuard]},
+   { path:"admin/work/add", component: AddWorkComponent,canActivate: [AuthGuard]},
+   { path:"admin/work/:id/edit", component: EditWorkComponent,canActivate: [AuthGuard]},
 
-   { path:"admin/user", component: ListUserComponent},
-   { path:"admin/user/add", component: AddUserComponent},
-   { path:"admin/user/:id/edit", component: EditUserComponent},
+   { path:"admin/category", component: ListCategoryComponent,canActivate: [AuthGuard]},
+   { path:"admin/category/add", component: AddCategoryComponent,canActivate: [AuthGuard]},
+   { path:"admin/category/:id/edit", component: EditCategoryComponent,canActivate: [AuthGuard]},
 
-   { path:"admin/profile", component: ListProfileComponent},
-   { path:"admin/profile/add", component: AddProfileComponent},
-   { path:"admin/profile/:id/edit", component: AddProfileComponent},
+   { path:"admin/user", component: ListUserComponent,canActivate: [AuthGuard]},
+   { path:"admin/user/add", component: AddUserComponent,canActivate: [AuthGuard]},
+   { path:"admin/user/:id/edit", component: EditUserComponent,canActivate: [AuthGuard]},
+
+   { path:"admin/profile", component: ListProfileComponent,canActivate: [AuthGuard]},
+   { path:"admin/profile/add", component: AddProfileComponent,canActivate: [AuthGuard]},
+   { path:"admin/profile/:id/edit", component: AddProfileComponent,canActivate: [AuthGuard]},
 ];
 
 @NgModule({

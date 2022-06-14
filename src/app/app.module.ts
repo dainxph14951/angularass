@@ -27,6 +27,7 @@ import { EditBlogComponent } from './components/blog/edit-blog/edit-blog.compone
 import { EditWorkComponent } from './components/work/edit-work/edit-work.component';
 import { DetailWorkComponent } from './pages/detail-work/detail-work.component';
 import { EditUserComponent } from './components/auth/edit-user/edit-user.component';
+import { HeaderAdminComponent } from './components/header-admin/header-admin.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { EditUserComponent } from './components/auth/edit-user/edit-user.compone
     EditBlogComponent,
     EditWorkComponent,
     DetailWorkComponent,
-    EditUserComponent
+    EditUserComponent,
+    HeaderAdminComponent
   ],
   imports: [
     BrowserModule,

@@ -28,6 +28,10 @@ import { EditWorkComponent } from './components/work/edit-work/edit-work.compone
 import { DetailWorkComponent } from './pages/detail-work/detail-work.component';
 import { EditUserComponent } from './components/auth/edit-user/edit-user.component';
 import { HeaderAdminComponent } from './components/header-admin/header-admin.component';
+import { LayoutAdminComponent } from './layout/layout-admin/layout-admin.component';
+import { LayoutWebComponent } from './layout/layout-web/layout-web.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { DetailBlogComponent } from './pages/detail-blog/detail-blog.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +58,11 @@ import { HeaderAdminComponent } from './components/header-admin/header-admin.com
     EditWorkComponent,
     DetailWorkComponent,
     EditUserComponent,
-    HeaderAdminComponent
+    HeaderAdminComponent,
+    LayoutAdminComponent,
+    LayoutWebComponent,
+    DashboardComponent,
+    DetailBlogComponent
   ],
   imports: [
     BrowserModule,

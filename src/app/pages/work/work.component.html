@@ -1,13 +1,12 @@
-<app-header></app-header>
 <section class="blog-news py-20">
     <div class="max-w-6xl mx-auto px-[235px]">
-        <h2 class="text-[44px] text-[#21243D] text-center md:text-left">Work</h2>
+        <h2 class="text-[44px] text-[#21243D] flex justify-left md:text-center">Work</h2>
     </div>
     <div class="max-w-6xl mx-auto md:px-[235px]">
         <div class="max-w-6xl mx-auto px-5">
             <div class="project-item grid md:grid-cols-[246px,auto] gap-8 border-b py-5" *ngFor="let works of works">
                 <div>
-                    <img src="{{works.img}}" class="rounded-lg w-full" alt="" width="246" height="180">
+                    <img src="{{works.img}}" class="rounded-lg w-full" alt="" width="300" height="180">
                 </div>
                 <div>
                     <h3>
@@ -61,4 +60,4 @@
     </div>
 
 </section>
-<app-footer></app-footer>
+

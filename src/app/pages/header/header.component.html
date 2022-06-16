@@ -1,4 +1,57 @@
 <header>
+    <div class="max-w-6xl mx-auto px-5">
+        <div class="py-5">
+            <div class="flex justify-end items-center">
+                <button id="btn-mobile" class="md:hidden">
+                    <label for="nav-mobile" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="38" fill="currentColor"
+                            class="bi bi-justify" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </label>
+                </button>
+                <input type="checkbox" id="nav-mobile" class="nav-input hidden ">
+                <div class="nav-mobile bg-[#fff] translate-x-[-104%] fixed top-0 left-0 right-0 bottom-0 w-[320px]">
+                    <div class="absolute right-px ">
+                        <button id="btn-mobile" class="">
+                            <label for="nav-mobile" class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-x-lg" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                </svg>
+                            </label>
+                        </button>
+                    </div>
+                    <ul class="">
+                        <li class="hover:text-red-700 text-gray-500 font-semibold"><a routerLink="/">Home</a></li>
+                    <li class="hover:text-red-700 text-gray-500 font-semibold" ><a routerLink="/work">Works</a></li>
+                    <li class="hover:text-red-700 text-gray-500 font-semibold"><a routerLink="/blog">Blog</a></li>
+                    <li class="hover:text-red-700 text-gray-500 font-semibold"><a routerLink="/admin/dashboard">Admin</a></li>
+                    <li class="hover:text-red-700 text-gray-500 font-semibold"><a routerLink="/signup">Signup</a></li>
+                    <li class="hover:text-red-700 text-gray-500 font-semibold"><a routerLink="/signin">Signin</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-end">
+                <ul class="flex justify-end space-x-8 py-5 hidden md:flex">
+                    <li class="hover:text-red-700 text-gray-500 font-semibold"><a routerLink="/">Home</a></li>
+                    <li class="hover:text-red-700 text-gray-500 font-semibold" ><a routerLink="/work">Works</a></li>
+                    <li class="hover:text-red-700 text-gray-500 font-semibold"><a routerLink="/blog">Blog</a></li>
+                    <li class="hover:text-red-700 text-gray-500 font-semibold"><a routerLink="/admin/dashboard">Admin</a></li>
+                    <li class="hover:text-red-700 text-gray-500 font-semibold"><a routerLink="/signup">Signup</a></li>
+                    <li class="hover:text-red-700 text-gray-500 font-semibold"><a routerLink="/signin">Signin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<!-- <header>
     <div class="max-w-6xl mx-auto px-5 ">
         <div class="flex justify-end py-3 md:hidden">
         <a href="">
@@ -16,4 +69,4 @@
             <li class="hover:text-red-700 text-gray-500 font-semibold"><a routerLink="/signin">Signin</a></li>
         </ul>
     </div>
-</header>
+</header> -->
